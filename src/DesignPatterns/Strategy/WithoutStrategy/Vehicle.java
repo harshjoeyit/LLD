@@ -4,7 +4,6 @@ package DesignPatterns.Strategy.WithoutStrategy;
 public class Vehicle {
 
 	public void drive() {
-		
 		// implement drive method here...
 		System.out.println("Normal drive capability");
 	}
