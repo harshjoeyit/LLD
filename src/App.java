@@ -7,7 +7,12 @@ public class App {
         DesignPatterns.Strategy.WithStrategy.Main.main();
     }
 
+    public static void observerPattern() {
+        DesignPatterns.Observer.Main.main();
+    }
+
     public static void main(String[] args) throws Exception {
-        strategyPattern();
+        // strategyPattern();
+        observerPattern();
     }
 }
