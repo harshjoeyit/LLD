@@ -11,8 +11,13 @@ public class App {
         DesignPatterns.Observer.Main.main();
     }
 
+    public static void decoratorPattern() {
+        DesignPatterns.Decorator.Main.main();
+    }
+
     public static void main(String[] args) throws Exception {
         // strategyPattern();
-        observerPattern();
+        // observerPattern();
+        decoratorPattern();
     }
 }
