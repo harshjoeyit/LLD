@@ -15,9 +15,19 @@ public class App {
         DesignPatterns.Decorator.Main.main();
     }
 
+    public static void factoryPattern() {
+        DesignPatterns.Factory.Factory.Main.main();
+    }
+
+    public static void abstractFactoryPattern() {
+        DesignPatterns.Factory.AbstractFactory.Main.main();
+    }
+
     public static void main(String[] args) throws Exception {
         // strategyPattern();
         // observerPattern();
-        decoratorPattern();
+        // decoratorPattern();
+        // factoryPattern();
+        abstractFactoryPattern();
     }
 }
