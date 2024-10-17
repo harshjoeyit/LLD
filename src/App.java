@@ -23,11 +23,16 @@ public class App {
         DesignPatterns.Factory.AbstractFactory.Main.main();
     }
 
+    public static void tictactoeGame() {
+        Examples.TicTacToe.Main.main();
+    }
+
     public static void main(String[] args) throws Exception {
         // strategyPattern();
         // observerPattern();
         // decoratorPattern();
         // factoryPattern();
-        abstractFactoryPattern();
+        // abstractFactoryPattern();
+        tictactoeGame();
     }
 }
