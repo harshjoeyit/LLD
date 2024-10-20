@@ -39,6 +39,10 @@ public class App {
         Examples.Logger.Main.main();
     }
 
+    public static void atm() {
+        Examples.ATM.Main.main();
+    }
+
     public static void main(String[] args) throws Exception {
         // strategyPattern();
         // observerPattern();
@@ -48,6 +52,7 @@ public class App {
         // tictactoeGame();
         // vehicleRentalSystem();
         // chainOfResponsibility();
-        logger();
+        // logger();
+        atm();
     }
 }
