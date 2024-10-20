@@ -31,6 +31,14 @@ public class App {
         Examples.VehicleRentalSystem.Main.main();
     }
 
+    public static void chainOfResponsibility() {
+        DesignPatterns.ChainOfResponsibility.Main.main();
+    }
+
+    public static void logger() {
+        Examples.Logger.Main.main();
+    }
+
     public static void main(String[] args) throws Exception {
         // strategyPattern();
         // observerPattern();
@@ -38,6 +46,8 @@ public class App {
         // factoryPattern();
         // abstractFactoryPattern();
         // tictactoeGame();
-        vehicleRentalSystem();
+        // vehicleRentalSystem();
+        // chainOfResponsibility();
+        logger();
     }
 }
