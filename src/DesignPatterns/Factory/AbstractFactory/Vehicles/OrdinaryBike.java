@@ -8,3 +8,4 @@ public class OrdinaryBike implements Bike {
         System.out.println("Driving an ordinary bike...");
     }
 }
+ 

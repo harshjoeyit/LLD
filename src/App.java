@@ -47,6 +47,10 @@ public class App {
         Examples.VendingMachine.Main.main();
     }
 
+    public static void builderPattern() {
+        DesignPatterns.Builder.Main.main();
+    }
+
     public static void main(String[] args) throws Exception {
         // strategyPattern();
         // observerPattern();
@@ -58,6 +62,9 @@ public class App {
         // chainOfResponsibility();
         // logger();
         // atm();
-        vendingMachine();
+        // vendingMachine();
+        builderPattern();
     }
 }
+
+
