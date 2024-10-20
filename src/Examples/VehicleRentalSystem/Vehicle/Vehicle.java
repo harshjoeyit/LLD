@@ -16,7 +16,7 @@ public class Vehicle {
 
     // rental cost
     double dailyRentalCost;
-    VehicleStatus status ;
+    VehicleStatus status;
 
     // good to have info
     double kmDriven;
@@ -77,13 +77,29 @@ public class Vehicle {
     public void setSeatCapacity(int seatCapacity) {
         this.seatCapacity = seatCapacity;
     }
-    
+
+    public VehicleType getVehicleType() {
+        return vehicleType;
+    }
+
+    public void setVehicleType(VehicleType vehicleType) {
+        this.vehicleType = vehicleType;
+    }
+
     public double getDailyRentalCost() {
         return dailyRentalCost;
     }
 
     public void setDailyRentalCost(double dailyRentalCost) {
         this.dailyRentalCost = dailyRentalCost;
+    }
+
+    public VehicleStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(VehicleStatus status) {
+        this.status = status;
     }
 
     public double getKmDriven() {
@@ -101,5 +117,4 @@ public class Vehicle {
     public void setHorsePower(double horsePower) {
         this.horsePower = horsePower;
     }
-
 }

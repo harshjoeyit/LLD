@@ -1,11 +1,13 @@
 package Examples.VehicleRentalSystem;
 
 import java.time.LocalDate;
+import java.util.List;
 
 import Examples.VehicleRentalSystem.Booking.BookingManager;
 import Examples.VehicleRentalSystem.Booking.Booking;
 import Examples.VehicleRentalSystem.Vehicle.Vehicle;
 import Examples.VehicleRentalSystem.Vehicle.VehicleInventory;
+import Examples.VehicleRentalSystem.Vehicle.Enums.VehicleType;
 
 public class Store {
     int id;
@@ -20,11 +22,16 @@ public class Store {
         this.bookingManager = new BookingManager();
     }
 
+    // searching vehicles in a store
+    public List<Vehicle> getVehicles(VehicleType vehicleType) {
+        return this.vehicleInventory.getVehicles(vehicleType);
+    }
+
     // book a vehicle
     public Booking bookVehicle(Vehicle vehicle, User user, LocalDate bookingDate, LocalDate bookingStart,
             LocalDate bookingEnd) {
 
-        Booking booking = this.bookingManager.bookVehicle(
+        return this.bookingManager.bookVehicle(
                 vehicle,
                 user,
                 bookingDate,
@@ -32,8 +39,11 @@ public class Store {
                 bookingEnd,
                 this.location,
                 this.location);
+    }
 
-        return booking;
+    // return vehicle
+    public void returnVehicle(Booking booking) {
+        bookingManager.returnVehicle(booking);
     }
 
     // getters and setters

@@ -53,6 +53,35 @@ public class BookingManager {
         return booking;
     }
 
+    // return vehicle
+    public void returnVehicle(Booking booking) {
+        // mark the booking as completed
+        booking.setStatus(BookingStatus.COMPLETED);
+
+        this.deleteBooking(booking);
+    }
+
+    // delete a booking
+    public void deleteBooking(Booking booking) {
+        // find and delete the booking from the list
+        List<Booking> updatedBookings = new ArrayList<Booking>();
+        for(Booking b: this.bookings) {
+            if (b.id == booking.id) {
+                continue;
+            }
+
+            updatedBookings.add(b);
+        }
+
+        setBookings(updatedBookings);
+    }
+
+    // update booking
+    // user can change - date of pickup, drop, etc
+    public void updatedBooking(Booking booking) {
+        // todo
+    }
+
     // getters and setters
 
     public List<Booking> getBookings() {

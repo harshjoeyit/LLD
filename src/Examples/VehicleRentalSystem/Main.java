@@ -5,6 +5,7 @@ import java.util.List;
 import java.time.LocalDate;
 
 import Examples.VehicleRentalSystem.Vehicle.VehicleInventory;
+import Examples.VehicleRentalSystem.Vehicle.Enums.VehicleType;
 import Examples.VehicleRentalSystem.Vehicle.Vehicle;
 import Examples.VehicleRentalSystem.Booking.Booking;
 import Examples.VehicleRentalSystem.Vehicle.Car;
@@ -21,11 +22,14 @@ public class Main {
 
         // Step 2: Searches and select store based on location
         Location location = new Location("Bengaluru", "Karnanata", "ABC, ABC", 560092);
-        List<Store> searchResults = vrs.searchStore(location);
-        Store selectedStore = searchResults.get(0);
+        List<Store> storeSearchResults = vrs.searchStore(location);
+        // selecting first in the search results
+        Store selectedStore = storeSearchResults.get(0);
 
-        // Step 3: Select a vehicle from the store
-        Vehicle vehicle = selectedStore.vehicleInventory.getVehicles().get(0);
+        // Step 3: Search and select a vehicle from the store
+        List<Vehicle> vehicleSearchResults = selectedStore.getVehicles(VehicleType.CAR);
+        // selecting first in the search results
+        Vehicle vehicle = vehicleSearchResults.get(0);
 
         // Step 4: Book selected vehicle
         Booking booking  = selectedStore.bookVehicle(
@@ -45,13 +49,12 @@ public class Main {
             System.out.println("bill not paid");
         }
 
-        System.out.println("booking completed");
-
-        System.out.println(booking);
-
         // can be added - 
         // Step 7: Pickup Car
+    
         // Step 8: Return the car
+        selectedStore.returnVehicle(booking);
+        System.out.println("booking completed");
     }
 
     public static List<User> addUsers() {
