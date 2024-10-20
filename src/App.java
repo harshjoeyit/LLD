@@ -27,12 +27,17 @@ public class App {
         Examples.TicTacToe.Main.main();
     }
 
+    public static void vehicleRentalSystem() {
+        Examples.VehicleRentalSystem.Main.main();
+    }
+
     public static void main(String[] args) throws Exception {
         // strategyPattern();
         // observerPattern();
         // decoratorPattern();
         // factoryPattern();
         // abstractFactoryPattern();
-        tictactoeGame();
+        // tictactoeGame();
+        vehicleRentalSystem();
     }
 }
