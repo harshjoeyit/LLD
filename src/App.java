@@ -63,6 +63,10 @@ public class App {
         DesignPatterns.StatePattern.Main.main();
     }
 
+    public static void interpretorPattern() {
+        DesignPatterns.InterpretorPattern.Main.main();
+    }
+
     public static void main(String[] args) throws Exception {
         // strategyPattern();
         // observerPattern();
@@ -78,7 +82,8 @@ public class App {
         // builderPattern();
         // fileSystem();
         // calculator();
-        stateDesignPattern();
+        // stateDesignPattern();
+        interpretorPattern();
     }
 }
 
