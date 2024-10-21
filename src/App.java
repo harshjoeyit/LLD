@@ -59,6 +59,10 @@ public class App {
         Examples.Calculator.Main.main();
     }
 
+    public static void stateDesignPattern() {
+        DesignPatterns.StatePattern.Main.main();
+    }
+
     public static void main(String[] args) throws Exception {
         // strategyPattern();
         // observerPattern();
@@ -73,7 +77,8 @@ public class App {
         // vendingMachine();
         // builderPattern();
         // fileSystem();
-        calculator();
+        // calculator();
+        stateDesignPattern();
     }
 }
 
