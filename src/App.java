@@ -55,6 +55,10 @@ public class App {
         Examples.FileSystem.Main.main();
     }
 
+    public static void calculator() {
+        Examples.Calculator.Main.main();
+    }
+
     public static void main(String[] args) throws Exception {
         // strategyPattern();
         // observerPattern();
@@ -68,7 +72,8 @@ public class App {
         // atm();
         // vendingMachine();
         // builderPattern();
-        fileSystem();
+        // fileSystem();
+        calculator();
     }
 }
 
