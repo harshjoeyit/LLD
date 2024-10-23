@@ -67,6 +67,14 @@ public class App {
         DesignPatterns.InterpretorPattern.Main.main();
     }
 
+    public static void mediatorPattern() {
+        DesignPatterns.Mediator.Main.main();
+    }
+
+    public static void paymentGateway() {
+        Examples.PaymentGateway.Main.main();
+    }
+
     public static void main(String[] args) throws Exception {
         // strategyPattern();
         // observerPattern();
@@ -83,7 +91,9 @@ public class App {
         // fileSystem();
         // calculator();
         // stateDesignPattern();
-        interpretorPattern();
+        // interpretorPattern();
+        // mediatorPattern();
+        paymentGateway();
     }
 }
 
