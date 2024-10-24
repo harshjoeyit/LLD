@@ -75,6 +75,10 @@ public class App {
         Examples.PaymentGateway.Main.main();
     }
 
+    public static void cache() {
+        Examples.Cache.Main.main();
+    }
+
     public static void main(String[] args) throws Exception {
         // strategyPattern();
         // observerPattern();
@@ -93,7 +97,8 @@ public class App {
         // stateDesignPattern();
         // interpretorPattern();
         // mediatorPattern();
-        paymentGateway();
+        // paymentGateway();
+        cache();
     }
 }
 
