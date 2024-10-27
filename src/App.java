@@ -79,6 +79,10 @@ public class App {
         Examples.Cache.Main.main();
     }
 
+    public static void calendar() {
+        Examples.Calendar.Main.main();
+    }
+
     public static void main(String[] args) throws Exception {
         // strategyPattern();
         // observerPattern();
@@ -98,7 +102,8 @@ public class App {
         // interpretorPattern();
         // mediatorPattern();
         // paymentGateway();
-        cache();
+        // cache();
+        calendar();
     }
 }
 
