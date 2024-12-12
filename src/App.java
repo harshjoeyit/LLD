@@ -83,6 +83,10 @@ public class App {
         Examples.Calendar.Main.main();
     }
 
+    public static void snakeladder() {
+        Examples.SnakeAndLadder.Main.main();
+    }
+
     public static void main(String[] args) throws Exception {
         // strategyPattern();
         // observerPattern();
@@ -103,7 +107,8 @@ public class App {
         // mediatorPattern();
         // paymentGateway();
         // cache();
-        calendar();
+        // calendar();
+        snakeladder();
     }
 }
 
