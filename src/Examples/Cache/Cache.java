@@ -22,7 +22,7 @@ public class Cache<K, V> {
             return null;
         }
 
-        // Notify policy that key was accessed.
+        // Notify the eviction policy that key was accessed 
         evictionPolicy.keyAccessed(key);
         
         return map.get(key);
